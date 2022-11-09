@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
+
+$offwhite: #eeeae3;
+$black: #141312;
+$lightgrey: #bebbb8;
+$darkgrey: #93908b;
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  color: $black;
+  font-family: 'lato';
+  background-color: $offwhite;
+}
+
+.container, 
+.experience_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: justify;
+  overflow: hidden;
+
+}
+
+.experience_container,
+.contact_container {
+  background-color: #141312;
+  color: $offwhite;
+  overflow: hidden;
+}
+
+nav {
+  background-color: $black;
+  width:100vw;
+  position: fixed;
+  bottom: 0;
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: $offwhite
+    }
+}
+
+
+h1 {
+  font-family: 'Square Peg', cursive;
+  font-size: 4em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+.project_card {
+height: 200px;
+width: 300px;
+background-color: $black;
+padding: 10px;
+box-shadow: 5px 5px $lightgrey;
+
+}
+
+.projects_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 50px;
+
+}
+
+.contact_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+form {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+input {
+  height: 30px;
+}
+.message_input {
+  height: 150px;
+}
+button {
+  height: 20px;
+  padding:20px;
+
+}
+}
+}
+
